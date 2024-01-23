@@ -1,0 +1,26 @@
+.client .box {
+  position: relative;
+  border-radius: 5px;
+}
+.client img {
+  border-radius: 5px;
+  width: 200px;
+  height: 150px;
+}
+
+.client h5 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.client label {
+  color: #fff;
+  margin-right: 20px;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 800px) {
+  .client .overlay::after {
+    width: 280px;
+    height: 170px;
+  }
+}

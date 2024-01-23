@@ -1,0 +1,29 @@
+.new form div {
+    display: flex;
+  }
+  .new textarea {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+   
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .new input {
+    margin-bottom: 20px;
+    margin-right: 10px;
+  }
+  .new form {
+    padding: 30px;
+  }
+  @media screen and (max-width: 768px) {
+    .new h4 {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .new form div {
+      flex-direction: column;
+    }
+    .new input {
+      width: 100%;
+    }
+  }
+  
