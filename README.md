@@ -24,13 +24,13 @@ Current features:
 - View all the consultation message on the list 
 - Delete a consultation from the list
 # Create
-![Create layout](https://github.com/uwasylvie/globalawchambers/blob/master/create.png)
+![Create layout](https://github.com/uwasylvie/globalawchambers/blob/master/screenshots/create.png)
 
 # View All
-![View layout](https://github.com/uwasylvie/globalawchambers/blob/master/view.png)
+![View layout](https://github.com/uwasylvie/globalawchambers/blob/master/screenshots/view.png)
 
 # Delete
-![Delete layout](https://github.com/uwasylvie/globalawchambers/blob/master/delete.png)
+![Delete layout](https://github.com/uwasylvie/globalawchambers/blob/master/screenshots/delete.png)
 
 
 
