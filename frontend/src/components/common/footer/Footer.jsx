@@ -13,7 +13,7 @@ const Footer = () => {
               <h2>Need professional legal advice?</h2>
               <p>Get a free consultation with our legal experts</p>
             </div>
-            <Link to="/new" className="btn5">Free Consultation</Link>
+            <Link to="/register" className="btn5">Free Consultation</Link>
             
           </div>
         </div>

@@ -1,19 +1,45 @@
 import React from 'react'
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
+import { useState } from "react"
+import axios from "axios"
 
 
-function Register() {
-  return (
+  function Register  () {
+    const [values, setValues] = useState({
+        name: '',
+        email: '',
+        password: ''
+    })
+    const [setError] = useState(false)
+    const navigate = useNavigate()
+    
+
+
+    const handleClick = async (e) => {
+      e.preventDefault();
+      try {
+        await axios.post("/register", values);
+        navigate("/login");
+      } catch (err) {
+        console.log(err);
+        setError(true)
+      }
+    };
+
+  
+    return (
     <div className="auth">
       
-      <form>
-      <h1>Register</h1>
-      <label >Username</label>
+      <form >
+
+      <h1>Register : </h1>
+      <label >Name</label>
         <input
-          required
+          name='name'
           type="text"
-          placeholder="username"
-          name="username"
+         placeholder="Enter your Name" required
+
+         onChange = {e => setValues({...values, name: e.target.value})}
          
         />
         <label >Email</label>
@@ -22,6 +48,7 @@ function Register() {
           type="email"
           placeholder="email"
           name="email"
+          onChange = {e => setValues({...values, email: e.target.value})}
           
         />
         <label >Password</label>
@@ -30,9 +57,10 @@ function Register() {
           type="password"
           placeholder="password"
           name="password"
+          onChange ={e => setValues({...values, password: e.target.value})}
           
         />
-        <button >Register</button>
+        <button onClick={handleClick} type='submit' >Sign up</button>
         
         <span>
           Do you have an account? <Link to="/login">Login</Link>

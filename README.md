@@ -10,7 +10,7 @@ After downloading the code:
 
 1. Using the command line, go into the application directory and run the following commands to install dependencies `npm install`.
 
-2. Build the React client application using `npm start`.
+2. Start the React client application using `npm start`.
 
 3. Start the node server by running `npm start`.
 
